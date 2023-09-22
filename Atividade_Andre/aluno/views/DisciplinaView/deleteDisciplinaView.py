@@ -32,4 +32,4 @@ class DeleteDisciplinaView(APIView):
         # Exclui a disciplina do banco de dados
         disciplina.delete()
         # Retorna uma resposta de sucesso com o código 204 (No Content) indicando que a disciplina foi excluída
-        return Response(status=status.HTTP_204_NO_CONTENT)
+        return Response("Disciplina deletada com sucessso!",status=status.HTTP_204_NO_CONTENT)

@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "92dcbe5a-1772-4863-aa7b-1f183297abca",
+		"name": "DISCIPLINA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29334040"
+	},
+	"item": [
+		{
+			"name": "adicionar_disciplina",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"Linguagem de Programação\",\r\n    \"descricao\" : \" JavaScript, Java, html\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/add_disciplina/"
+			},
+			"response": []
+		},
+		{
+			"name": "listar_disciplina",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/get_disciplina/"
+			},
+			"response": []
+		},
+		{
+			"name": "listar_disciplina_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/get_disciplina/4"
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar_disciplina_id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"django_rest_framework API\",\r\n    \"descricao\":\"bom demais, porém dificil\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/update_disciplina/2/"
+			},
+			"response": []
+		},
+		{
+			"name": "delete_disciplina",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/delete_disciplina/4/"
+			},
+			"response": []
+		}
+	]
+}

@@ -33,6 +33,6 @@ class DeleteAlunoView(APIView):
         # Exclui o aluno do banco de dados
         aluno.delete()
         # Retorna uma resposta de sucesso com o código 204 (No Content) indicando que o aluno foi excluído
-        return Response(status=status.HTTP_204_NO_CONTENT)
+        return Response("Aluno deletado com Sucesso!",status=status.HTTP_204_NO_CONTENT)
 
         

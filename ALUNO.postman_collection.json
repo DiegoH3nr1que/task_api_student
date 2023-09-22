@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "7cabea43-f741-4aa6-bbc5-823ad22cb80c",
+		"name": "ALUNO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29334040"
+	},
+	"item": [
+		{
+			"name": "adicionar aluno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"TuliFPS\",\r\n    \"email\" : \"tulifps@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/add_aluno/"
+			},
+			"response": []
+		},
+		{
+			"name": "listar_aluno",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/get_aluno/"
+			},
+			"response": []
+		},
+		{
+			"name": "listar_aluno_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/get_aluno/6"
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar aluno_id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Aguinas Mendes1\",\r\n    \"email\": \"aguinasdomendes@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/update_aluno/3/"
+			},
+			"response": []
+		},
+		{
+			"name": "delete_aluno_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:8000/delete_disciplina/3/"
+			},
+			"response": []
+		}
+	]
+}

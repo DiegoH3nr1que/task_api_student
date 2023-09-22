@@ -37,5 +37,5 @@ class DeleteTarefaView(APIView):
         tarefa.delete()
         
         # Retorna uma resposta de sucesso com o código 204 (No Content) indicando que a tarefa foi excluída
-        return Response(status=status.HTTP_204_NO_CONTENT)
+        return Response("Tarefa deletada com sucesso!",status=status.HTTP_204_NO_CONTENT)
 
